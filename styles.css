@@ -1,3 +1,16 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
-    content: "<h1>Testing</h2>";
+    content: "Testing";
+    color: black;
+}
+
+img {
+    width: 50%;
+}
+
+.aboutMe {
+    text-align: center;
 }
