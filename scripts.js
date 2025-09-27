@@ -1,6 +1,7 @@
 window.addEventListener("load", () => {
     setupNavbar()
     setupFooter()
+    setupEventListeners()
 })
 
 function setupNavbar() {
@@ -21,3 +22,14 @@ function setupFooter() {
     </ul>`
 }
 
+function setupEventListeners() {
+    let dropdowns = document.querySelectorAll(".dropdown")
+    for (let dropdown of dropdowns) {
+        dropdown.addEventListener("click", (e) => {
+            let index = e.target.id.substring(e.target.id.length - 1)
+            let description = document.getElementById("description" + index)
+            // if (description.classList.contains("displayDropdown"))
+            description.classList.toggle("displayDropdown")
+        })
+    }
+}
