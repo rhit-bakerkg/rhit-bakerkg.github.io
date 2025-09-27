@@ -28,7 +28,6 @@ function setupEventListeners() {
         dropdown.addEventListener("click", (e) => {
             let index = e.target.id.substring(e.target.id.length - 1)
             let description = document.getElementById("description" + index)
-            // if (description.classList.contains("displayDropdown"))
             description.classList.toggle("displayDropdown")
         })
     }

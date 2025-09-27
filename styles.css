@@ -1,16 +1,31 @@
 html {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-    content: "Testing";
-    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 img {
     width: 30%;
 }
 
+.projectImg {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
 .aboutMe {
     text-align: center;
+}
+
+.description {
+    display: none;
+}
+
+.dropdown:hover {
+    color: gray;
+}
+
+.displayDropdown {
+    display: block;
 }
